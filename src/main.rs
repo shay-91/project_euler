@@ -1,3 +1,5 @@
+mod p002;
+
 fn main() {
-    println!("Hello, world!");
+    p002::p002();
 }
