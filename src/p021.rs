@@ -22,14 +22,14 @@ fn sum_of_divisors(n: i32) -> i32{
     // => there exists b with: a * b = c 
     // => b | c
     // and if a < sqrt(b) than b > sqrt(b)
-    for i in 2..(n as f32).sqrt() as i32 {
+    for i in 2..=(n as f32).sqrt() as i32 {
         if n % i == 0 {
             sum += i + n / i;
         }
     }
     // is sqrt(n) is a proper divisor of n?
     if ((n as f32).sqrt() as i32).pow(2) == n {
-        sum += (n as f32).sqrt() as i32;
+        sum -= (n as f32).sqrt() as i32;
     }
     sum
 }
