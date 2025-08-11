@@ -4,7 +4,7 @@ pub fn p017() {
     let mut sum = 11;
     for i in 1..1000 {
         let chars: Vec<char> = i.to_string().chars().collect();
-        // 'position' is the position fo the current digit (from left to right)
+        // 'position' is the position of the current digit (from left to right)
         let mut position = 0;
         // three characters => 3 digits (something with "hundred")
         if chars.len() == 3 {
