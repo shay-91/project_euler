@@ -19,7 +19,7 @@ fn sum_of_divisors(n: i32) -> i32{
     let mut sum = 1;
     // reduce cost of iterating by using:
     // if a | c 
-    // => exist b with: a * b = c 
+    // => there exists b with: a * b = c 
     // => b | c
     // and if a < sqrt(b) than b > sqrt(b)
     for i in 2..(n as f32).sqrt() as i32 {
