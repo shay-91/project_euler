@@ -9,7 +9,6 @@ pub fn p030() {
     for i in 10..1_000_000 {
         if digit_fifth_powers(i) {
             sum += i;
-            println!("{}", i);
         }
     }
     println!("{}", sum);
